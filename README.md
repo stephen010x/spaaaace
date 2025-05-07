@@ -10,7 +10,8 @@ Originally, the classic version of this demo was made years ago on [Khan Academy
 #### Controls
 `w` or `<up>` to thrust \
 `a` or `<left>` to turn counterclockwise \
-`d` or `<right>` to turn clockwise
+`d` or `<right>` to turn clockwise \
+`<spacebar>` to zoom out
 
 [Link to the demo](https://stephen010x.github.io/spaaaace)
 

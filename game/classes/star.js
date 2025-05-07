@@ -276,10 +276,10 @@ ChunkHandler.prototype.update = function(dt) {
 
 	let scam = snap(cam);
 
-	// I forgot to cast to screen coordiantes for the x and y of each z
+	// TODO: I forgot to cast to screen coordiantes for the x and y of each z
 	for (let z = scam.z; z < scam.z + depth; z += size.z) {
-		for (let y = scam.y - size.y; y < scam.y + scam.height; y += size.y) {
-			for (let x = scam.x - size.x; x < scam.x + scam.width; x += size.x) {
+		for (let y = scam.y - size.y*2; y < scam.y + scam.height + size.y; y += size.y) {
+			for (let x = scam.x - size.x*2; x < scam.x + scam.width + size.x; x += size.x) {
 				let index = [x, y, z].toString();
 				if (!(index in this.chunks)) {
 					//console.log("gep:", x, y, z);
